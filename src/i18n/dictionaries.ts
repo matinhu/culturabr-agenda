@@ -1,0 +1,143 @@
+import type { Idioma } from "@/types";
+
+type Dicionario = Record<string, string>;
+
+const ptBR: Dicionario = {
+  "app.nome": "CulturaBR Agenda",
+  "app.subtitulo":
+    "Divulgação e gestão de atividades culturais em cidades brasileiras",
+  "nav.inicio": "Início",
+  "nav.gestao": "Gestão",
+  "nav.relatorio": "Relatório",
+  "nav.sobre": "Sobre",
+  "filtros.titulo": "Filtros",
+  "filtros.estado": "Estado",
+  "filtros.cidade": "Cidade",
+  "filtros.categoria": "Categoria",
+  "filtros.busca": "Buscar",
+  "filtros.busca.placeholder": "Buscar por título, instituição ou local...",
+  "filtros.todos": "Todos",
+  "filtros.todas": "Todas",
+  "filtros.limpar": "Limpar filtros",
+  "atividade.detalhes": "Ver detalhes",
+  "atividade.inscrever": "Tenho interesse",
+  "atividade.dataHora": "Data e horário",
+  "atividade.local": "Local",
+  "atividade.instituicao": "Instituição responsável",
+  "atividade.contato": "Contato",
+  "atividade.publico": "Público-alvo",
+  "atividade.acessibilidade": "Acessibilidade",
+  "atividade.capacidade": "Capacidade",
+  "atividade.descricao": "Descrição",
+  "atividade.voltar": "Voltar para a agenda",
+  "inscricao.titulo": "Manifestar interesse na atividade",
+  "inscricao.nome": "Nome completo",
+  "inscricao.email": "E-mail",
+  "inscricao.telefone": "Telefone",
+  "inscricao.observacao": "Observação",
+  "inscricao.enviar": "Enviar interesse",
+  "inscricao.sucesso":
+    "Interesse registrado com sucesso! A instituição entrará em contato.",
+  "gestao.titulo": "Área de gestão",
+  "gestao.subtitulo":
+    "Cadastre, edite e organize as atividades culturais da instituição.",
+  "gestao.senha": "Senha de demonstração",
+  "gestao.entrar": "Entrar",
+  "gestao.senhaErro": "Senha incorreta. Use cultura2026 para a demonstração.",
+  "gestao.nova": "Nova atividade",
+  "gestao.editar": "Editar",
+  "gestao.excluir": "Excluir",
+  "gestao.exportar": "Exportar atividades em CSV",
+  "gestao.resumo": "Copiar resumo da ação extensionista",
+  "gestao.confirmaExclusao":
+    "Tem certeza que deseja excluir esta atividade? Esta ação não pode ser desfeita.",
+  "gestao.totalAtividades": "Atividades cadastradas",
+  "gestao.totalInscricoes": "Inscrições recebidas",
+  "gestao.salvar": "Salvar atividade",
+  "gestao.cancelar": "Cancelar",
+  "gestao.criada": "Atividade criada com sucesso.",
+  "gestao.atualizada": "Atividade atualizada com sucesso.",
+  "gestao.excluida": "Atividade excluída.",
+  "gestao.copiado": "Texto copiado para a área de transferência.",
+  "relatorio.titulo": "Material para o relatório final",
+  "relatorio.intro":
+    "Use os blocos abaixo para compor o relatório da atividade extensionista. Clique em copiar para levar o texto para o seu documento.",
+  "relatorio.copiar": "Copiar texto",
+  "sobre.titulo": "Sobre o sistema",
+  "footer.descricao":
+    "Projeto extensionista para divulgação e gestão de atividades culturais brasileiras.",
+};
+
+const enUS: Dicionario = {
+  "app.nome": "CulturaBR Agenda",
+  "app.subtitulo":
+    "Disseminating and managing cultural activities across Brazilian cities",
+  "nav.inicio": "Home",
+  "nav.gestao": "Management",
+  "nav.relatorio": "Report",
+  "nav.sobre": "About",
+  "filtros.titulo": "Filters",
+  "filtros.estado": "State",
+  "filtros.cidade": "City",
+  "filtros.categoria": "Category",
+  "filtros.busca": "Search",
+  "filtros.busca.placeholder": "Search by title, institution or venue...",
+  "filtros.todos": "All",
+  "filtros.todas": "All",
+  "filtros.limpar": "Clear filters",
+  "atividade.detalhes": "View details",
+  "atividade.inscrever": "I'm interested",
+  "atividade.dataHora": "Date and time",
+  "atividade.local": "Venue",
+  "atividade.instituicao": "Hosting institution",
+  "atividade.contato": "Contact",
+  "atividade.publico": "Target audience",
+  "atividade.acessibilidade": "Accessibility",
+  "atividade.capacidade": "Capacity",
+  "atividade.descricao": "Description",
+  "atividade.voltar": "Back to schedule",
+  "inscricao.titulo": "Register your interest",
+  "inscricao.nome": "Full name",
+  "inscricao.email": "Email",
+  "inscricao.telefone": "Phone",
+  "inscricao.observacao": "Notes",
+  "inscricao.enviar": "Submit interest",
+  "inscricao.sucesso": "Interest registered. The institution will contact you.",
+  "gestao.titulo": "Management area",
+  "gestao.subtitulo": "Create, edit and organize cultural activities.",
+  "gestao.senha": "Demo password",
+  "gestao.entrar": "Enter",
+  "gestao.senhaErro": "Incorrect password. Use cultura2026 for the demo.",
+  "gestao.nova": "New activity",
+  "gestao.editar": "Edit",
+  "gestao.excluir": "Delete",
+  "gestao.exportar": "Export activities as CSV",
+  "gestao.resumo": "Copy extension action summary",
+  "gestao.confirmaExclusao":
+    "Are you sure you want to delete this activity? This cannot be undone.",
+  "gestao.totalAtividades": "Activities",
+  "gestao.totalInscricoes": "Interest records",
+  "gestao.salvar": "Save activity",
+  "gestao.cancelar": "Cancel",
+  "gestao.criada": "Activity created.",
+  "gestao.atualizada": "Activity updated.",
+  "gestao.excluida": "Activity deleted.",
+  "gestao.copiado": "Text copied to clipboard.",
+  "relatorio.titulo": "Final report materials",
+  "relatorio.intro": "Copy each block into your final extension report.",
+  "relatorio.copiar": "Copy text",
+  "sobre.titulo": "About the system",
+  "footer.descricao":
+    "University extension project for disseminating and managing Brazilian cultural activities.",
+};
+
+const dicionarios: Record<Idioma, Dicionario> = {
+  "pt-BR": ptBR,
+  "en-US": enUS,
+};
+
+export const IDIOMA_PADRAO: Idioma = "pt-BR";
+
+export function t(chave: string, idioma: Idioma = IDIOMA_PADRAO): string {
+  return dicionarios[idioma]?.[chave] ?? dicionarios[IDIOMA_PADRAO][chave] ?? chave;
+}
